@@ -9,7 +9,6 @@ export default {
       statusValidate: "Status of email",
     };
   },
-  // in$valid@email.c#com
 
   methods: {
     check(value: string): void {
@@ -18,8 +17,6 @@ export default {
       );
 
       this.statusValidate = value.match(re) ? "ok!" : "false";
-
-      console.log(value.match(re));
     },
   },
 };
