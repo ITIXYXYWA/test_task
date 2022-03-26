@@ -1,12 +1,12 @@
 <script lang="ts">
 interface DataValidate {
-  statusValidate: string;
+  isEmailValid: string;
 }
 
 export default {
   data(): DataValidate {
     return {
-      statusValidate: "Status of email",
+      isEmailValid: "Status of email",
     };
   },
 
@@ -16,21 +16,21 @@ export default {
         /^((([0-9A-Za-z]{1}[-0-9A-z\\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u
       );
 
-      this.statusValidate = value.match(re) ? "ok!" : "false";
+      this.isEmailValid = value.match(re) ? "ok!" : "false";
     },
   },
 };
 </script>
 
 <template>
-  <div class="status">{{ statusValidate }}</div>
+  <div class="status">{{ isEmailValid }}</div>
 
   <input
     placeholder="write your email"
     type="email"
     class="input_validate"
     name="mail"
-    id="mail"
+    id="mailInput"
     @keyup="check($event.target.value)"
   />
   <p></p>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import InputValidate from "@/components/InputValidate.vue";
+import InputMail from "@/components/InputMail.vue";
 </script>
 
 <template>
   <main>
-    <InputValidate />
+    <InputMail />
   </main>
 </template>
