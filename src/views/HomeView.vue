@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import InputMail from "@/components/InputMail.vue";
+import InputMail from "@/components/ui/Form/InputMail.vue";
 </script>
 
 <template>
