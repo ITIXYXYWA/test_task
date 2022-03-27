@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 
 import { shallowMount } from "@vue/test-utils";
-import InputMail from "../InputMail.vue";
+import InputMail from "../ui/Form/InputMail.vue";
 
 describe("ValidateInput", () => {
   const wrapper = shallowMount(InputMail);
